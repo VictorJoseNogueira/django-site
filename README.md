@@ -1,4 +1,7 @@
 # django-site
+Set-ExecutionPolicy RemoteSigned -Scope Process
+    quando nao executar automaticamente o codigo 
+        .\venv\Scripts\Activate.ps1
  
 aprendendo a usar o django curso do luizomf
 
@@ -18,6 +21,7 @@ manage.py
     arquivo que faz a mesma coisa que django-admin {ex: django-admin runserver/ python manage.py  runserver}  regra da casa é 
     utilizar o django-admin apenar para iniciar o startproject nome_do_projeto apenas
     apos isso utilizar manage.py 
+    a diferença é que o manage.py configura a variavel de ambiente django_settings_module apontando para o arquivo settings.py do seu projeto django 
 
 
     pasta projeto1 
