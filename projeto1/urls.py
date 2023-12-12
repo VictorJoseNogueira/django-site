@@ -1,19 +1,14 @@
 from django.contrib import admin
 from django.urls import path
 from django.http import HttpResponse
+from django.urls import include, path
 
 
-
-
-#HTTP request
-def my_view(request):
-    #return HTTP Response 
-    #cliente request <- servidor response
-    return HttpResponse('uma linda string')
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', include('recipes.urls')),
     #path('rota, e funçao')
-    path('sobre/', my_view),
-]
+   
+] 
